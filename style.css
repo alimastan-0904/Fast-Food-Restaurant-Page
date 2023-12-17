@@ -71,10 +71,10 @@ nav {
 }
 
 #menu {
-  min-height: calc(100vh - 200px);
   display: flex;
   align-items: center;
   background-color: #5a189a;
+  min-height: calc(100vh - 108px);
 }
 
 .container {
@@ -131,7 +131,11 @@ nav {
 
 footer {
   background-color: #ff9e00;
-  padding-bottom: 0.2rem;
+  padding: 1rem;
+}
+
+footer p:not(:first-child) {
+  margin-top: 1rem;
 }
 
 footer p,
