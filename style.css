@@ -5,6 +5,12 @@
   font-family: Caviar;
 }
 
+body,
+.wrapper {
+  min-height: 100vh;
+  min-height: 100svh;
+}
+
 li {
   list-style: none;
 }
@@ -20,6 +26,7 @@ a {
   src: url(./fonts/Caviar-Dreams/CaviarDreams.ttf);
 }
 
+.wrapper,
 nav,
 .navlinks,
 .logo,
@@ -28,10 +35,18 @@ nav,
   display: flex;
 }
 
+.wrapper {
+  flex-direction: column;
+  background-color: palevioletred;
+}
+
+.wrapper > * {
+}
+
 nav {
   justify-content: center;
   background-color: #ff9e00;
-  padding: 1rem 0;
+  padding: 2rem 0;
 }
 
 .logo {
@@ -46,12 +61,14 @@ nav {
 }
 
 .logoimg {
-  width: 10%;
+  min-width: 100px;
+  width: 20%;
+  max-width: 150px;
 }
 
 .logo img {
   object-fit: contain;
-  height: 100px;
+  height: 200px;
   max-width: 100%;
 }
 
@@ -70,17 +87,17 @@ nav {
   gap: 3rem;
 }
 
-#menu {
+main {
+  flex-grow: 1;
   display: flex;
   align-items: center;
   background-color: #5a189a;
-  min-height: calc(100vh - 108px);
 }
 
 .container {
   overflow-x: scroll;
   gap: 3rem;
-  padding: 0 2rem;
+  padding: 2rem 2rem;
 }
 
 .menuitem {
@@ -172,10 +189,6 @@ footer p a {
 
   .description h1 {
     font-size: 1.5rem;
-  }
-
-  .logoimg {
-    width: 20%;
   }
 }
 
