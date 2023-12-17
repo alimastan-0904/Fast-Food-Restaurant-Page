@@ -46,7 +46,7 @@ nav,
 nav {
   justify-content: center;
   background-color: #ff9e00;
-  padding: 2rem 0;
+  padding: 0.5rem 0;
 }
 
 .logo {
@@ -62,13 +62,12 @@ nav {
 
 .logoimg {
   min-width: 100px;
-  width: 20%;
-  max-width: 150px;
+  width: 10%;
 }
 
 .logo img {
   object-fit: contain;
-  height: 200px;
+  height: 100px;
   max-width: 100%;
 }
 
@@ -151,8 +150,15 @@ footer {
   padding: 1rem;
 }
 
-footer p:not(:first-child) {
-  margin-top: 1rem;
+footer > * {
+  text-align: center;
+}
+
+.attributions {
+  margin-top: 0.5rem;
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
 }
 
 footer p,
@@ -160,7 +166,6 @@ footer p a {
   font-size: 1rem;
   color: #5a189a;
   font-weight: 700;
-  text-align: center;
 }
 
 @media screen and (max-width: 1024px) {
