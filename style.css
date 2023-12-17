@@ -191,3 +191,29 @@ footer p a {
     text-align: center;
   }
 }
+
+@media screen and (max-height: 610px) {
+  #menu {
+    padding: 1rem 0;
+  }
+
+  .menuitem {
+    max-width: 100px;
+  }
+
+  .menuitem img {
+    height: 300px;
+  }
+
+  .description {
+    gap: 0.5rem;
+  }
+
+  .description p {
+    font-size: 0.9rem;
+  }
+
+  .description h1 {
+    font-size: 1.2rem;
+  }
+}
